@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<meta name=”robots” content=”noindex”>
+<div class="header">
+    <div class="topnav">
+        <img width="40" style="padding-left: 2%; padding-top: 0.4%;" src="../assets/images/bemo-logo2.png" width="167" height="100">
+        <a href="#" (click)="checkCondition('Contact')">Contact Us</a>
+        <a href="#" (click)="checkCondition('Main')">Main</a>
+    </div>
+</div>
+<app-main *ngIf="condition"></app-main>
+<app-contact *ngIf="!condition"></app-contact>
+<div class="footer">
+    ©2013-2016 BeMo Academic Consulting Inc. All rights reserved. <a style="color: #FF6600;" href="">
+      Disclaimer & Privacy Policy</a>, <a style="color: #FF6600;" href="#" (click)="checkCondition('Contact')">Contact Us</a>
+
+    <img width="30" alt="Angular Logo" src="../assets/images/Twitter.jpg" style="float:right">
+    <img width="30" alt="Angular Logo" src="../assets/images/Facebook.jpg" style="float:right">
+
+</div>
+
+<router-outlet></router-outlet>

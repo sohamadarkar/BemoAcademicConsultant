@@ -1,0 +1,18 @@
+<img width="100%" style="margin-top:-8%;" src="../../assets/images/contact-us.png">
+<div class="paragraph">
+    BeMo Academic Consulting Inc.<br><br>
+    <u><b>Toll Free:</b></u> 1-855-900-BeMo (2366)<br><br>
+    <u><b>Email:</b></u> info@bemoacademicconsulting.com<br><br>
+
+    <div class="form">
+        <form [formGroup]="userForm" (ngSubmit)="onFormSubmit()">
+            NAME: *<br>
+            <input class="text" formControlName="name"><br><br> EMAIL ADDRESS: *<br>
+            <input class="text" formControlName="email"><br><br> HOW CAN WE HELP YOU? *<br>
+            <textarea rows="8" formControlName="query" cols="38" name="query"></textarea><br><br>
+            <input type="reset" name="reset" value="reset" class="buttons">
+            <input type="submit" name="submit" value="submit" class="buttons"><br><br><br><br> Note: If you are having difficulties with our contact us form above, send us an email to info@bemoacademicconsulting.com (copy & paste the email address)<br><br>
+        </form>
+    </div>
+
+</div>
